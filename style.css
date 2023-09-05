@@ -58,6 +58,7 @@ a {
 
 .header_button:hover {
     color:#a02bff;
+    background-color: #f1f1f1;
     transition: 0.7s;
 }
 
@@ -68,13 +69,13 @@ a {
     max-height: 50rem;
     min-height: 50rem;
     background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245, 245, 245, 0.727)),url(/images/home-bg4.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .home-hero_content {
-    top: 50%;
+    top: 40%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -88,15 +89,31 @@ a {
     font-weight: 700;
     cursor: pointer;
     max-width: 5rem;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 4px 2px;
     text-align: center;
     background-color: #081cffc0;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .generic_button:hover {
-    color:#a02bff;
+    color:#c5a7dd;
     transition: 0.7s;
+}
+
+.profile {
+    justify-content: center;
+    display: flex;
+}
+
+.profile-item {
+    border-radius: 50%;
+    width: 20%;
+    text-align: center;
+    padding: 3px;
+    background: linear-gradient(to right, red, purple);
 }
 
 .dropdown {
@@ -121,11 +138,12 @@ a {
 }
   
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    width: 100%;
 }
 
 .dropdown:hover .header_button {
