@@ -1,0 +1,135 @@
+body {
+    width: 100%;
+    margin: 0px;
+    overflow: auto;
+}
+  
+h1 {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    color: black;
+    font-family: "MD Primer Bold",Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+}
+li {
+    font-family: "MD Primer Bold",Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+}
+
+header {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 10px 100px rgb(70 65 65 / 80%);
+    background: #ffffff;
+    z-index: 1000;
+}
+
+.header_content {   
+    justify-content: space-between;
+    display: flex;
+    padding: 0.5rem 2rem;
+}
+
+.header_menu {
+    color: #000000ff;
+    display: flex;
+}
+
+.header_button {
+    display: flex;
+    padding: 2rem 2.8rem;
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header_button:hover {
+    color:#a02bff;
+    transition: 0.7s;
+}
+
+.home-hero {
+    color: #151515;
+    height: 100vh;
+    position: relative;
+    max-height: 50rem;
+    min-height: 50rem;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245, 245, 245, 0.727)),url(/images/home-bg4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home-hero_content {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.generic_button {
+    display: block;
+    padding: 2rem 2.8rem;
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    max-width: 5rem;
+    border: 2px solid black;
+    margin: 4px 2px;
+    text-align: center;
+    background-color: #081cffc0;
+}
+
+.generic_button:hover {
+    color:#a02bff;
+    transition: 0.7s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .header_button {
+    background-color: #f1f1f1;
+}
