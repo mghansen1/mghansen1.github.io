@@ -3,6 +3,11 @@ body {
     margin: 0px;
     overflow: auto;
 }
+
+.main {
+    padding: 16px;
+    margin-top: 6rem;
+}
   
 h1 {
     color: rgb(0, 0, 0);
@@ -15,11 +20,23 @@ p {
     color: black;
     font-family: "MD Primer Bold",Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
 }
+
+@keyframes textSlide {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.animate p {
+    animation: textSlide 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+
 li {
     font-family: "MD Primer Bold",Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
 }
 
 header {
+    top: 0;
     display: block;
 }
 
@@ -72,6 +89,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    justify-content: space-between
 }
 
 .home-hero_content {
@@ -103,6 +121,27 @@ a {
     transition: 0.7s;
 }
 
+.next {
+    top: 50%;
+    left: 10%;
+    background-color: #5a08ff94;
+    max-width: 15rem;
+    padding: 1.5rem 2.3rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.previous {
+    top: 50%;
+    left: 85%;
+    background-color: #5a08ff94;
+    max-width: 15rem;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+
+
 .profile {
     justify-content: center;
     display: flex;
@@ -125,10 +164,10 @@ a {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
 
 .dropdown-content a {
     color: black;
