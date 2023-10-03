@@ -1,5 +1,4 @@
 var phoneRegex = /^([0-9]{3})-([0-9]{3})-([0-9]{4})$/;
-// var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 var emailRegex = /^\S{1,}[@]\S{1,}[.]\S{1,}$/; 
 
 let user_fname = document.getElementById("user_fname");
@@ -76,10 +75,8 @@ function validateForm() {
     validatePhone()
     validateMessage()
     if (!(!validateFName() || !validateLName() || !validateEmail() || !validatePhone() || !validateMessage())) {
-        console.log("success")
         return true
     } else {
-        console.log("failed")
         return false
     }
 
@@ -114,7 +111,6 @@ window.onload = function() {
                     console.log('FAILED...', error);
                 });
         }
-        console.log(document.getElementById("user_email").value)
         
     });
 }
