@@ -235,7 +235,7 @@ span {
     transition: color 0.15s ease-in;
 }
 
-.projects {
+#projects {
     align-items: center;
     display: flex;
     flex-direction: column;
