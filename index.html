@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ5WY4ZPE7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LZ5WY4ZPE7');
+    </script>
+
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -16,7 +27,7 @@
             <div class="header_menu">
                 <a href="./index.html" class="header_button">Home</a>
                 <div class="dropdown">
-                    <div class="header_button">Required Features</div>
+                    <div class="header_button">Class Links</div>
                     <div class="dropdown-content">
                         <a href="https://cbcolleg3.github.io/">Next Student</a>
                         <a href="https://ad-creations.github.io/">Previous Student</a>
@@ -27,7 +38,7 @@
                     </div>
                 </div>
                 <a href="./aboutMe.html" class="header_button">About Me</a>
-                <a href="https://mattm401.github.io/" class="header_button">Course Page</a>
+                <a href="./files/Matthew Hansen_Resume_2023_BOLD.pdf" class="header_button">Resume</a>
             </div>
         </div>
     </header>
@@ -39,18 +50,52 @@
                 <img src="/images/mePhoto.PNG" class="profile-item" alt="Personal Photo">
             </div>
             <h1>Hi, Welcome to my Website! &#128075;</h1>
-            <h2>Assingment details below &#128071;</h2>
-            <ul>
-                <li><strong>I go by: </strong>Matthew</li>
-                <li><strong>Full Name: </strong>Matthew Hansen </li>
-                <li><strong>Course #: </strong> CISC474</li>
-                <li><strong>Assignment: </strong>Personal Web Page 1</li>
-                <li><strong>UDEL email address: </strong>mghansen@udel.edu</li>
-            </ul>
+            <p>I'm interested in a career in Software Engineering developing new, useful technologies.</p>
         </div>
         <a href="https://cbcolleg3.github.io/" class="generic_button previous">Next Student</a>
         
     </div>
+    
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/images/aeroU.jpg" alt="aero photo">
+                <h2>AERO SAE 2023-2024</h2>
+                <p>Developing avionics software, embedded software, and robotics for the Aero SAE 2024 competition, ensuring the successful launch of an autonomous secondary aircraft to deliver payloads to specified targets. Programming computer vision with <strong>Raspberry Pi, Python, OpenCV</strong> to detect 100% of targets for no GPS section of competition.</p>
+            </div>
+            <div class="project-card">
+                <img src="/images/Pill.PNG" alt="aero photo">
+                <h2>Duality</h2>
+                <p>The goal of Duaity was to make an automated monoblock pill bottle filling system for small batch manufacturers. Programmed and wired an Arduino microcontroller in low-level <strong>C++</strong> to implement precise break sensor beam detection and simultaneous control of stepper motors, Duality increased performance by 454% compared to manually filling the bottles while maintaining 99% accuracy.</p>
+            </div>
+            <div class="project-card">
+                <img src="/images/Game.PNG" alt="aero photo">
+                <h2>Sprite Brawl</h2>
+                <p>The 2D 1v1 <strong>Javascript</strong> fighting game with fully implement physics and unique attacks that has online functionality to connect users. The project utilizes a <strong>nodeJs</strong> backend with a Firebase database, and a <strong>websocket</strong> connection for a low-latency gaming experience.</p>
+            </div>
+
+        </div>
+        
+
+    </section>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <section class="footer">
+        <div class="footer-contents">
+            <div>
+                Designed and developed by Matthew Hansen | © 2023
+            </div>
+
+            <div>
+                <a href="www.linkedin.com/in/matthewhansenudel"><i class="media-icon fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/mghansen1"><i class="media-icon fa fa-github" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+
+    </section>
     
     
 </body>

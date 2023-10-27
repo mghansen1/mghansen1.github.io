@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ5WY4ZPE7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LZ5WY4ZPE7');
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <title>Contact Me</title>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -14,7 +25,7 @@
             <div class="header_menu">
                 <a href="./index.html" class="header_button">Home</a>
                 <div class="dropdown">
-                    <div class="header_button">Required Features</div>
+                    <div class="header_button">Class Links</div>
                     <div class="dropdown-content">
                         <a href="https://cbcolleg3.github.io/">Next Student</a>
                         <a href="https://ad-creations.github.io/">Previous Student</a>
@@ -25,7 +36,7 @@
                     </div>
                 </div>
                 <a href="./aboutMe.html" class="header_button">About Me</a>
-                <a href="https://mattm401.github.io/" class="header_button">Course Page</a>
+                <a href="./files/Matthew Hansen_Resume_2023_BOLD.pdf" class="header_button">Resume</a>
             </div>
         </div>
     </header>
@@ -39,11 +50,11 @@
             <label for="user_lname">Last name:</label><br>
             <input type="text" id="user_lname" name="user_lname"><span id="user_lname-error"></span><br>
 
-            <label for="user_email">Email address (format username@domain.top-level-domain):</label><br>
-            <input type="text" id="user_email" name="user_email"><span id="user_email-error"></span><br>
+            <label for="user_email">Email address:</label><br>
+            <input type="text" id="user_email" name="user_email" placeholder="username@domain.com"><span id="user_email-error"></span><br>
 
-            <label for="user_phone">Phone Number (format xxx-xxx-xxxx):</label><br>
-            <input type="text" id="user_phone" name="user_phone"><span id="user_phone-error"></span><br>
+            <label for="user_phone">Phone Number:</label><br>
+            <input type="text" id="user_phone" name="user_phone" placeholder="123-456-7890"><span id="user_phone-error"></span><br>
 
             <label for="user_message">Message:</label><br>
             <textarea id="user_message" name="user_message" rows="6" cols="60"></textarea><span id="user_message-error"></span><br>
@@ -52,6 +63,20 @@
 
         </form>
     </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <section class="footer">
+        <div class="footer-contents">
+            <div>
+                Designed and developed by Matthew Hansen | © 2023
+            </div>
+            <div>
+                <a href="www.linkedin.com/in/matthewhansenudel"><i class="media-icon fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/mghansen1"><i class="media-icon fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/contact-script.js"></script>
 
 </body>
